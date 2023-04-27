@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+header nav{
+    width: 85%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+header nav .menu a{
+    color: #fff;
+    margin-left: 50px;
+    text-transform: capitalize;
+}
+header nav .menu a:hover{
+    color: #50e5e6;
+}
+
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#194f8e, #6c2b6c);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(#19508e9e, #6c2b6c9c),url(img/bgafter.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.hero .contanier{
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+}
+.hero .div-text{
+    width: 50%;
+}
+.hero .div-text h1{
+    color: #50e5e6;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.hero .div-text h3{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.hero .div-text p{
+    color: #dedede;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.hero .div-text .btn{
+    color: #fff;
+    padding: 15px 30px;
+    background-color: #50e5e6;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 3px solid #50e5e6;
+}
+.hero .div-text .btn:hover{
+    background-color: transparent;
+}
+
+.hero .div-img{
+    width: 430px;
+    z-index: 50;
+    position: absolute;
+    bottom: -3px;
+    right: 60px;
+}
+.hero .div-img img{
+    width: 100%;
+}
